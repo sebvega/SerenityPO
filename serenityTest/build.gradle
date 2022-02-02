@@ -29,15 +29,15 @@ buildscript {
     }
 }
 //Sonar
-sonarqube{
-    properties{
-        property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.login", "5e44098fff5f4f9c3d161765bbd9fec726facbbb"
-        property "sonar.organization", "sanchezvegaing"
-        property "sonar.projectKey", "SerenityDO-sanchezvegaing"
-        property "sonar.scm.disable", "True"
-    }
-}
+//sonarqube{
+//    properties{
+//        property "sonar.host.url", "https://sonarcloud.io"
+//        property "sonar.login", "5e44098fff5f4f9c3d161765bbd9fec726facbbb"
+//        property "sonar.organization", "sanchezvegaing"
+//        property "sonar.projectKey", "SerenityDO-sanchezvegaing"
+//        property "sonar.scm.disable", "True"
+//    }
+//}
 
 
 dependencies {
