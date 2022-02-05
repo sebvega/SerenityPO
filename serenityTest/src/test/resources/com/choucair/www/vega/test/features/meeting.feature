@@ -2,7 +2,7 @@
 Feature: fill instance in meetings
 
 
-  @fullMeetingHappy
+  @fullMeetingHappiness
   Scenario Outline: fill in meeting fields
     Given "vega" starts session
       | user   | password   |
@@ -10,10 +10,12 @@ Feature: fill instance in meetings
     When added business unit
       | nameBusiness | <nameBusiness> |
 
+
     And configured meeting
       | nameBussinesUnit   | meetingName   | meetingType   | meetingNumber   | starDate   | hourStar   | endDate   | hourEnd   | nameLocation   | addresLocation   | latitudeLocation   | longitudeLocation   | unit   | contacTitle   | contactFirstName   | contactLastName   | contactEmail   | contactId   | contactUser   | reporterTitle   | reporterFirstName   | reporterLastName   | reporterEmail   | reporterId   | reporterUser   |
       | <nameBussinesUnit> | <meetingName> | <meetingType> | <meetingNumber> | <starDate> | <hourStar> | <endDate> | <hourEnd> | <nameLocation> | <addresLocation> | <latitudeLocation> | <longitudeLocation> | <unit> | <contacTitle> | <contactFirstName> | <contactLastName> | <contactEmail> | <contactId> | <contactUser> | <reporterTitle> | <reporterFirstName> | <reporterLastName> | <reporterEmail> | <reporterId> | <reporterUser> |
     Then check the status "<messenge>"
+
 
     Examples:
       | user  | password | nameBusiness  | nameBussinesUnit | meetingName | meetingType | meetingNumber | starDate   | hourStar | endDate    | hourEnd | nameLocation | addresLocation | latitudeLocation | longitudeLocation | unit       | contacTitle                   | contactFirstName | contactLastName | contactEmail                | contactId | contactUser | reporterTitle             | reporterFirstName | reporterLastName | reporterEmail     | reporterId | reporterUser | messenge |
